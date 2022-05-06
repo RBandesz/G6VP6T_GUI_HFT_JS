@@ -1,0 +1,51 @@
+﻿<Window x:Class="TireDB.WPFClient.Windows.StatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TireDB.WPFClient.Windows"
+        xmlns:vms3="clr-namespace:TireDB.WPFClient.ViewModels"
+        mc:Ignorable="d"
+        Title="StatWindow">
+    <Window.DataContext>
+        <vms3:StatViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox ItemsSource="{Binding Data}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="1">
+            <Button Content="Get Brand avarage prices" Command="{Binding BrandAvaragesCommand, Mode=OneWay}" Margin="10" Padding="10" />
+            <Button Content="Get Brand SUM prices" Command="{Binding TirePriceSUMCommand, Mode=OneWay}" Margin="10" Padding="10" />
+            
+            <Button Content="Is Made of Place and HQ is same?" Command="{Binding HqMadeOfPlaceCommand, Mode=OneWay}" Margin="10" Padding="10" />
+            
+            <Button Content="Close" Click="Button_Click" Margin="10" Padding="10" />
+            <Label Content="Price"/>
+            <TextBox Text="{Binding Price}"  />
+            <Label Content="Width"/>
+            <TextBox Text="{Binding Width}"   />
+            <Label Content="AspectRatio"/>
+            <TextBox Text="{Binding AspectRatio}" />
+            <Label Content="Diameter"/>
+            <TextBox Text="{Binding Diameter}"/>
+            <Button Content="Tire recommendation" Command="{Binding TireRecommendationCommand, Mode=OneWay}" Margin="10" Padding="10" />
+            <Label Content="Brand name"/>
+            <TextBox Text="{Binding ProductionCountryName}"/>
+            <Label Content="TireName"/>
+            <TextBox Text="{Binding TireName}"/>
+            <Button Content="Is Made of Place and HQ is same?" Command="{Binding HqMadeOfPlaceCommand, Mode=OneWay}" Margin="10" Padding="10" />
+            <Label Content="Diameter for tires"/>
+            <TextBox Text="{Binding TireByDiameter}"/>
+            <Button Content="Get tire by Diameter" Command="{Binding TireByDiameterCommand, Mode=OneWay}" Margin="10" Padding="10" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TireShop.Logic.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:TireShop.Logic.Tests.AdministrationTest">
+            <summary>
+            AdminTest class.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.AdministrationTest.Setup">
+            <summary>
+            Setup method.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.AdministrationTest.TestByCreateBrand">
+            <summary>
+            Create menu testing.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.AdministrationTest.TestByCreateTire">
+            <summary>
+            Crate tire test.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.AdministrationTest.TestByCreateTireSpecification">
+            <summary>
+            Create tire spec test.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.AdministrationTest.TestByDeleteTire">
+            <summary>
+            Delete tire test.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.AdministrationTest.TestByDeleteBrand">
+            <summary>
+            Delete brand test.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.AdministrationTest.TestByDeleteTireSpecification">
+            <summary>
+            DElete tire spec test.
+            </summary>
+        </member>
+        <member name="T:TireShop.Logic.Tests.TireshopTest">
+            <summary>
+            Tireshoptest class.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.Setup">
+            <summary>
+            Setup method.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.TestByGetAllTire">
+            <summary>
+            Get all tire test.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.TestByGetAllBrand">
+            <summary>
+            Get all Brand test.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.TestByGetAllTireSpec">
+            <summary>
+            GEt all tire spec test.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.TestByGetOneTireByID">
+            <summary>
+            Test tire id.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.TestByGetOneBrandByID">
+            <summary>
+            get brand by id test.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.TestByGetOneTireSpecByID">
+            <summary>
+            Get tire spec by id tesst.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.TestGetBrandAVG">
+            <summary>
+            trest brandavg.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.TestHQMAdeOFPLaces">
+            <summary>
+            Test hq madeofplace.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Tests.TireshopTest.TestTireRecommendations">
+            <summary>
+            Test tire recomm.
+            </summary>
+        </member>
+    </members>
+</doc>

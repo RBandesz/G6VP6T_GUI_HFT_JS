@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Brand UI</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <h1>Brand List</h1>
+
+    <div id="formdiv">
+        <label>Brand name</label>
+        <input type="text" id="brandname" />
+        <button type="button" onclick="create()">Add Brand</button>
+    </div>
+
+    <div id="statdiv">
+        <button type="button" onclick="getdatabrandavarages()">Get brand averages</button>
+        <button type="button" onclick="getbrandsums()">Get brand SUM prices</button>
+        <label>Diameter</label>
+        <input type="text" id="diameterput" />
+        <button type="button" onclick="gettirebydiameter()">Get the tires by diameter</button>
+    </div>
+
+    <div id="updateformdiv">
+        <label>Brand name</label>
+        <input type="text" id="brandnametoupdate" />
+        <button type="button" onclick="update()">Update Brand</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="resultarea">
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Statistics</th>
+            </tr>
+        </thead>
+        <tbody id="statresultarea">
+        </tbody>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

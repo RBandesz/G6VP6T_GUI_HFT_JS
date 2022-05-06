@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TireShop.Program</name>
+    </assembly>
+    <members>
+        <member name="T:Program.Program">
+            <summary>
+            Program.
+            </summary>
+        </member>
+        <member name="M:Program.Program.Main">
+            <summary>
+            Main program.
+            </summary>
+        </member>
+    </members>
+</doc>

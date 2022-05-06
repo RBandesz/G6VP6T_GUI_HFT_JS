@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TireShop.Data</name>
+    </assembly>
+    <members>
+        <member name="T:TireShop.Data.Tables.Brand">
+            <summary>
+            Initializes a new instance of the Brand.
+            </summary>
+        </member>
+        <member name="M:TireShop.Data.Tables.Brand.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TireShop.Data.Tables.Brand"/> class.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Brand.ID">
+            <summary>
+            Gets or sets and sets ID.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Brand.Name">
+            <summary>
+            Gets or sets and sets ID.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Brand.CountryName">
+            <summary>
+            Gets or sets and sets CountryName.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Brand.Headquarter">
+            <summary>
+            Gets or sets and sets Headquarter.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Brand.CEOName">
+            <summary>
+            Gets or sets and sets CEOName.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Brand.Factories">
+            <summary>
+            Gets or sets and sets Factories.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Brand.Tires">
+            <summary>
+            Gets or sets and sets Tires.
+            </summary>
+        </member>
+        <member name="M:TireShop.Data.Tables.Brand.ToString">
+            <summary>
+            Generate string.
+            </summary>
+            <returns>x as a string.</returns>
+        </member>
+        <member name="T:TireShop.Data.Tables.Tire">
+            <summary>
+            Gets or sets TireSize.
+            </summary>
+        </member>
+        <member name="M:TireShop.Data.Tables.Tire.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TireShop.Data.Tables.Tire"/> class.
+            Tire ctor.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Tire.ID">
+            <summary>
+            Gets or sets ID.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Tire.BrandID">
+            <summary>
+            Gets or sets BrandID.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Tire.Price">
+            <summary>
+            Gets or sets Price.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Tire.Width">
+            <summary>
+            Gets or sets Width.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Tire.AspectRatio">
+            <summary>
+            Gets or sets AspectRatio.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Tire.Diameter">
+            <summary>
+            Gets or sets Diameter.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Tire.TireName">
+            <summary>
+            Gets or sets TireName.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Tire.Brand">
+            <summary>
+            Gets or sets Brand.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.Tire.TireSpecifications">
+            <summary>
+            Gets or sets and sets TireSpecifications.
+            </summary>
+        </member>
+        <member name="M:TireShop.Data.Tables.Tire.ToString">
+            <summary>
+            Write the ToString method.
+            </summary>
+            <returns>Returns a string.</returns>
+        </member>
+        <member name="T:TireShop.Data.Tables.TireSpecification">
+            <summary>
+            Initializes a new instance of the TireSpecifications.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.TireSpecification.ID">
+            <summary>
+            Gets or sets ID.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.TireSpecification.TireID">
+            <summary>
+            Gets or sets BrandID.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.TireSpecification.ProductionCountryName">
+            <summary>
+            Gets or sets CountryName.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.TireSpecification.DOTNumber">
+            <summary>
+            Gets or sets DOTNumber.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.TireSpecification.ProductionYear">
+            <summary>
+            Gets or sets ProductionYear.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.TireSpecification.ProductionWeek">
+            <summary>
+            Gets or sets ProductionWeek.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.TireSpecification.LoadIndex">
+            <summary>
+            Gets or sets LoadIndex.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.TireSpecification.SpeedRating">
+            <summary>
+            Gets or sets SpeedRating.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.Tables.TireSpecification.Tire">
+            <summary>
+            Gets or sets Brand.
+            </summary>
+        </member>
+        <member name="M:TireShop.Data.Tables.TireSpecification.ToString">
+            <summary>
+            Write the ToString method.
+            </summary>
+            <returns>Returns a string.</returns>
+        </member>
+        <member name="T:TireShop.Data.Tables.ToStringAttribute">
+            <summary>
+            Tostring attribute class.
+            </summary>
+        </member>
+        <member name="T:TireShop.Data.TireDbContext">
+            <summary>
+            Initializes a new instance of the TireDbContext.
+            </summary>
+        </member>
+        <member name="M:TireShop.Data.TireDbContext.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TireShop.Data.TireDbContext"/> class.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.TireDbContext.Brands">
+            <summary>
+            Gets or sets Brands.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.TireDbContext.Tires">
+            <summary>
+            Gets or sets tiresizes.
+            </summary>
+        </member>
+        <member name="P:TireShop.Data.TireDbContext.TireSpecification">
+            <summary>
+            Gets or sets tirespecification.
+            </summary>
+        </member>
+        <member name="M:TireShop.Data.TireDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Creating db file.
+            </summary>
+            <param name="optionsBuilder">opitonsbuilder.</param>
+        </member>
+        <member name="M:TireShop.Data.TireDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Creating model.
+            </summary>
+            <param name="modelBuilder">modelbuilder.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,422 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TireShop.Logic</name>
+    </assembly>
+    <members>
+        <member name="T:TireShop.Logic.AvarageResult">
+            <summary>
+            AvarageResult class.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.AvarageResult.BrandName">
+            <summary>
+            Gets or sets indentify a brandName.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.AvarageResult.AvaragePrice">
+            <summary>
+            Gets or sets set the AVG price.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.AvarageResult.ToString">
+            <summary>
+            Create a string.
+            </summary>
+            <returns>with a string.</returns>
+        </member>
+        <member name="M:TireShop.Logic.AvarageResult.Equals(System.Object)">
+            <summary>
+            Equals method.
+            </summary>
+            <param name="obj">bool.</param>
+            <returns>With equal.</returns>
+        </member>
+        <member name="M:TireShop.Logic.AvarageResult.GetHashCode">
+            <summary>
+            Override gethash code.
+            </summary>
+            <returns>with a string.</returns>
+        </member>
+        <member name="T:TireShop.Logic.HQMadeofPlace">
+            <summary>
+            HQMAdeofplace.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.HQMadeofPlace.BrandHQ">
+            <summary>
+            Gets or sets brandHQ.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.HQMadeofPlace.TireMadePlace">
+            <summary>
+            Gets or sets tirePLAce.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.HQMadeofPlace.SamePlace">
+            <summary>
+            Gets or sets a value indicating whether bool Same place.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.HQMadeofPlace.ToString">
+            <summary>
+            Makes a string.
+            </summary>
+            <returns>returns a string.</returns>
+        </member>
+        <member name="M:TireShop.Logic.HQMadeofPlace.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="obj">get a tire name.</param>
+            <returns>with a bool.</returns>
+        </member>
+        <member name="M:TireShop.Logic.HQMadeofPlace.GetHashCode">
+            <summary>
+            Override gethash code.
+            </summary>
+            <returns>with a get.</returns>
+        </member>
+        <member name="T:TireShop.Logic.Logicinterfaces.ILogicAdministration">
+            <summary>
+            Initializes ILogicAdministration.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Logicinterfaces.ILogicAdministration.CrateNewBrand(TireShop.Data.Tables.Brand)">
+            <summary>
+            Create a new brand.
+            </summary>
+            <param name="newBrand">A brand type newBrand obj.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logicinterfaces.ILogicAdministration.CrateNewTire(TireShop.Data.Tables.Tire)">
+            <summary>
+            Create a new tire.
+            </summary>
+            <param name="newTire">A tire type newTire obj.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logicinterfaces.ILogicAdministration.CrateNewTireSpecification(TireShop.Data.Tables.TireSpecification)">
+            <summary>
+            Create a new tirepec.
+            </summary>
+            <param name="newTireSpecification">A tirespec type tirespec obj.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logicinterfaces.ILogicAdministration.RemoveNewBrand(System.Int32)">
+            <summary>
+            Delete a brand.
+            </summary>
+            <param name="id">Brand id.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logicinterfaces.ILogicAdministration.RemoveNewTire(System.Int32)">
+            <summary>
+            Delete a tire.
+            </summary>
+            <param name="id">Tire id.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logicinterfaces.ILogicAdministration.RemoveNewTireSpecification(System.Int32)">
+            <summary>
+            Delete a tirespec.
+            </summary>
+            <param name="id">tirespec id.</param>
+        </member>
+        <member name="T:TireShop.Logic.ITireShopLogic">
+            <summary>
+            ITireShopLogic class.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.GetTireById(System.Int32)">
+            <summary>
+            Gets a tire.
+            </summary>
+            <param name="id">tireid.</param>
+            <returns>with a tire.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.GetBrandById(System.Int32)">
+            <summary>
+            Get abrand by id.
+            </summary>
+            <param name="id">brand id's.</param>
+            <returns>with a brand.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.GetTireSpecificationById(System.Int32)">
+            <summary>
+            Get TireSpecification by id.
+            </summary>
+            <param name="id">TireSpecification id's.</param>
+            <returns>with a TireSpecification.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.GetAllTires">
+            <summary>
+            Get all tires in a list.
+            </summary>
+            <returns>With a list.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.GetAllBrands">
+            <summary>
+            Get all Brands in a list.
+            </summary>
+            <returns>with all brands.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.GetAllTireSpecifications">
+            <summary>
+            Get all TireSpecification in a list.
+            </summary>
+            <returns>with all TireSpecification.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.BrandAvarages">
+            <summary>
+            Get the avarages price per brand.
+            </summary>
+            <returns>with avg prices.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.HQMadeofPlaces(System.String,System.String)">
+            <summary>
+            See if the hq country same with the production country.
+            </summary>
+            <param name="brandName">brand name.</param>
+            <param name="tireName">tire name.</param>
+            <returns>brand hq country, tire production country, is the same bool.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.TireRecommendations(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Picks you a tire you should buy.
+            </summary>
+            <param name="maxPrice">your buget.</param>
+            <param name="width">your tires width.</param>
+            <param name="aspectRatio">your tires aspectRatio.</param>
+            <param name="diameter">your tires diameter.</param>
+            <returns>with the selected tire for you.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.BrandAvaragesAsync">
+            <summary>
+            Get the avarages price per brand.
+            </summary>
+            <returns>with avg prices.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.HQMadeofPlacesAsync(System.String,System.String)">
+            <summary>
+            See if the hq country same with the production country.
+            </summary>
+            <param name="brandName">brand name.</param>
+            <param name="tireName">tire name.</param>
+            <returns>brand hq country, tire production country, is the same bool.</returns>
+        </member>
+        <member name="M:TireShop.Logic.ITireShopLogic.TireRecommendationsAsync(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Picks you a tire you should buy.
+            </summary>
+            <param name="maxPrice">your buget.</param>
+            <param name="width">your tires width.</param>
+            <param name="aspectRatio">your tires aspectRatio.</param>
+            <param name="diameter">your tires diameter.</param>
+            <returns>with the selected tire for you.</returns>
+        </member>
+        <member name="T:TireShop.Logic.Logics.LogicAdministration">
+            <summary>
+            Logic Admin.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.Logics.LogicAdministration.#ctor(TireShop.Repository.TireRepo.ITireRepository,TireShop.Repository.BrandRepo.IBrandRepository,TireShop.Repository.TireSpecificationRepo.ITireSpecificationRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TireShop.Logic.Logics.LogicAdministration"/> class.
+            </summary>
+            <param name="tireRepo">tireRepo specified.</param>
+            <param name="brandRepo">brandRepo specified.</param>
+            <param name="tireSpecificationRepo">tireSpecificationRepo specified..</param>
+        </member>
+        <member name="M:TireShop.Logic.Logics.LogicAdministration.CrateNewBrand(TireShop.Data.Tables.Brand)">
+            <summary>
+            Create a new brand.
+            </summary>
+            <param name="newBrand">brand param.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logics.LogicAdministration.CrateNewTire(TireShop.Data.Tables.Tire)">
+            <summary>
+            Create new tire.
+            </summary>
+            <param name="newTire">tire param.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logics.LogicAdministration.CrateNewTireSpecification(TireShop.Data.Tables.TireSpecification)">
+            <summary>
+            create new tire spec.
+            </summary>
+            <param name="newTireSpecification">trie sepc.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logics.LogicAdministration.RemoveNewBrand(System.Int32)">
+            <summary>
+            Remove brand.
+            </summary>
+            <param name="id">removable id.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logics.LogicAdministration.RemoveNewTire(System.Int32)">
+            <summary>
+            Remove tire.
+            </summary>
+            <param name="id">removable id.</param>
+        </member>
+        <member name="M:TireShop.Logic.Logics.LogicAdministration.RemoveNewTireSpecification(System.Int32)">
+            <summary>
+            Remove tire spec.
+            </summary>
+            <param name="id">removable id.</param>
+        </member>
+        <member name="T:TireShop.Logic.TireShopLogic">
+            <summary>
+            TireShopLogic class.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.#ctor(TireShop.Repository.TireRepo.ITireRepository,TireShop.Repository.BrandRepo.IBrandRepository,TireShop.Repository.TireSpecificationRepo.ITireSpecificationRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TireShop.Logic.TireShopLogic"/> class.
+            </summary>
+            <param name="tirerepo">tirerepo.</param>
+            <param name="brandRepo">brand repo.</param>
+            <param name="tireSpecificationRepo">tire spec repo.</param>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.GetAllTires">
+            <summary>
+            Gets all the tires.
+            </summary>
+            <returns>with all the tires.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.GetAllBrands">
+            <summary>
+            Get all brands.
+            </summary>
+            <returns>With all brand.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.GetAllTireSpecifications">
+            <summary>
+            Get all tirespec.
+            </summary>
+            <returns>with all tire spec.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.GetTireById(System.Int32)">
+            <summary>
+            Gets the tire id.
+            </summary>
+            <param name="id">Tire id.</param>
+            <returns>With th tireid.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.GetBrandById(System.Int32)">
+            <summary>
+            Gets the tire id.
+            </summary>
+            <param name="id">Tire id.</param>
+            <returns>With th tireid.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.GetTireSpecificationById(System.Int32)">
+            <summary>
+            Gets the tire id.
+            </summary>
+            <param name="id">Tire id.</param>
+            <returns>With th tireid.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.BrandAvarages">
+            <summary>
+            Brand avg prices.
+            </summary>
+            <returns>with avg prices.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.HQMadeofPlaces(System.String,System.String)">
+            <summary>
+            Is the place same?.
+            </summary>
+            <param name="brandName">brand name.</param>
+            <param name="tireName">tire name.</param>
+            <returns>with the names and a bool.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.TireRecommendations(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets you a tire with the params.
+            </summary>
+            <param name="maxPrice">your budget.</param>
+            <param name="width">tire's width.</param>
+            <param name="aspectRatio">tire's aspect ratio.</param>
+            <param name="diameter">tire's diameter.</param>
+            <returns>with a tire.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.BrandAvaragesAsync">
+            <summary>
+            Get the avarages price per brand.
+            </summary>
+            <returns>with avg prices.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.HQMadeofPlacesAsync(System.String,System.String)">
+            <summary>
+            See if the hq country same with the production country.
+            </summary>
+            <param name="brandName">brand name.</param>
+            <param name="tireName">tire name.</param>
+            <returns>brand hq country, tire production country, is the same bool.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireShopLogic.TireRecommendationsAsync(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Picks you a tire you should buy.
+            </summary>
+            <param name="maxPrice">your buget.</param>
+            <param name="width">your tires width.</param>
+            <param name="aspectRatio">your tires aspectRatio.</param>
+            <param name="diameter">your tires diameter.</param>
+            <returns>with the selected tire for you.</returns>
+        </member>
+        <member name="T:TireShop.Logic.TireRecommendation">
+            <summary>
+            Recommend a tire.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.TireRecommendation.BrandName">
+            <summary>
+            Gets or sets brand name.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.TireRecommendation.TireName">
+            <summary>
+            Gets or sets tire name.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.TireRecommendation.TirePrice">
+            <summary>
+            Gets or sets tire price.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.TireRecommendation.MaxPrice">
+            <summary>
+            Gets or sets max price.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.TireRecommendation.Width">
+            <summary>
+            Gets or sets tire width.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.TireRecommendation.AspectRatio">
+            <summary>
+            Gets or sets tire aspect ratio.
+            </summary>
+        </member>
+        <member name="P:TireShop.Logic.TireRecommendation.Diameter">
+            <summary>
+            Gets or sets tire diameter.
+            </summary>
+        </member>
+        <member name="M:TireShop.Logic.TireRecommendation.ToString">
+            <summary>
+            Creates a string.
+            </summary>
+            <returns>with a string.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireRecommendation.Equals(System.Object)">
+            <summary>
+            Analyzing it has the same value.
+            </summary>
+            <param name="obj">Tirerecomm obj.</param>
+            <returns>with a bool.</returns>
+        </member>
+        <member name="M:TireShop.Logic.TireRecommendation.GetHashCode">
+            <summary>
+            Give back an int.
+            </summary>
+            <returns>With a value.</returns>
+        </member>
+    </members>
+</doc>

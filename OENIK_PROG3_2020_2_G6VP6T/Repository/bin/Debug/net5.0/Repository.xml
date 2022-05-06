@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TireShop.Repository</name>
+    </assembly>
+    <members>
+        <member name="T:TireShop.Repository.BrandRepo.BrandRepository">
+            <summary>
+            BrandRepo class.
+            </summary>
+        </member>
+        <member name="M:TireShop.Repository.BrandRepo.BrandRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TireShop.Repository.BrandRepo.BrandRepository"/> class.
+            </summary>
+            <param name="ctx">return with db obj.</param>
+        </member>
+        <member name="M:TireShop.Repository.BrandRepo.BrandRepository.GetOne(System.Int32)">
+            <summary>
+            Get one method.
+            </summary>
+            <param name="id">bradn id.</param>
+            <returns>Get brand.</returns>
+        </member>
+        <member name="T:TireShop.Repository.BrandRepo.IBrandRepository">
+            <summary>
+            BrandRepo interface.
+            </summary>
+        </member>
+        <member name="T:TireShop.Repository.IRepository`1">
+            <summary>
+            Interface documentation.
+            </summary>
+            <typeparam name="T">T param.</typeparam>
+        </member>
+        <member name="M:TireShop.Repository.IRepository`1.Create(`0)">
+            <summary>
+            Create a new entity.
+            </summary>
+            <param name="entity">Brand, Tire, TireSpec.</param>
+        </member>
+        <member name="M:TireShop.Repository.IRepository`1.Delete(System.Int32)">
+            <summary>
+            Delete a Brand, Tire or Spec.
+            </summary>
+            <param name="id">Bradn tire or spec id.</param>
+        </member>
+        <member name="M:TireShop.Repository.IRepository`1.GetOne(System.Int32)">
+            <summary>
+            Get one doc.
+            </summary>
+            <param name="id">id.</param>
+            <returns>Item id.</returns>
+        </member>
+        <member name="M:TireShop.Repository.IRepository`1.GetAll">
+            <summary>
+            Get all tire.
+            </summary>
+            <returns>With all tire.</returns>
+        </member>
+        <member name="T:TireShop.Repository.Repo`1">
+            <summary>
+            Repo class.
+            </summary>
+            <typeparam name="T">Generic param.</typeparam>
+        </member>
+        <member name="F:TireShop.Repository.Repo`1.ctx">
+            <summary>
+            Ctx.
+            </summary>
+        </member>
+        <member name="M:TireShop.Repository.Repo`1.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TireShop.Repository.Repo`1"/> class.
+            Repo ctr.
+            </summary>
+            <param name="ctx">ctx generic obj.</param>
+        </member>
+        <member name="M:TireShop.Repository.Repo`1.Create(`0)">
+            <summary>
+            Create a new entity.
+            </summary>
+            <param name="entity">Tire, Brand or spec.</param>
+        </member>
+        <member name="M:TireShop.Repository.Repo`1.Delete(System.Int32)">
+            <summary>
+            Delete an existing entity.
+            </summary>
+            <param name="id">Brand or tire or spec id.</param>
+        </member>
+        <member name="M:TireShop.Repository.Repo`1.GetAll">
+            <summary>
+            Get all tire.
+            </summary>
+            <returns>with all tire.</returns>
+        </member>
+        <member name="M:TireShop.Repository.Repo`1.GetOne(System.Int32)">
+            <summary>
+            Get one.
+            </summary>
+            <param name="id">id.</param>
+            <returns>only wiht one.</returns>
+        </member>
+        <member name="T:TireShop.Repository.TireRepo.ITireRepository">
+            <summary>
+            Interface.
+            </summary>
+        </member>
+        <member name="T:TireShop.Repository.TireRepo.TireRepository">
+            <summary>
+            Initializes a new instance of the TireRepository class.
+            </summary>
+        </member>
+        <member name="M:TireShop.Repository.TireRepo.TireRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TireShop.Repository.TireRepo.TireRepository"/> class.
+            </summary>
+            <param name="ctx">Dbcontext.</param>
+        </member>
+        <member name="M:TireShop.Repository.TireRepo.TireRepository.GetOne(System.Int32)">
+            <summary>
+            Get one tire.
+            </summary>
+            <param name="id">tire id.</param>
+            <returns>with one tire.</returns>
+        </member>
+        <member name="T:TireShop.Repository.TireSpecificationRepo.ITireSpecificationRepository">
+            <summary>
+            Tire Spec repo.
+            </summary>
+        </member>
+        <member name="T:TireShop.Repository.TireSpecificationRepo.TireSpecificationRepository">
+            <summary>
+            Tire Spec class.
+            </summary>
+        </member>
+        <member name="M:TireShop.Repository.TireSpecificationRepo.TireSpecificationRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TireShop.Repository.TireSpecificationRepo.TireSpecificationRepository"/> class.
+            </summary>
+            <param name="ctx">db obj.</param>
+        </member>
+        <member name="M:TireShop.Repository.TireSpecificationRepo.TireSpecificationRepository.GetOne(System.Int32)">
+            <summary>
+            Tire Spec.
+            </summary>
+            <param name="id">Tire spec id.</param>
+            <returns>with a tire spec.</returns>
+        </member>
+    </members>
+</doc>
